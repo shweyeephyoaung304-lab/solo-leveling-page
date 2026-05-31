@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sung Jin Woo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #0d0d0d;
+            color: #ffffff;
+        }
+
+        /* Back button */
+        .back-btn {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #a78bfa;
+            color: #ffffff;
+            border: 1px solid #333;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        /* Header section */
+        .header {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+            margin-bottom: 40px;
+        }
+
+       
+
+        /* Right side info */
+        .info {
+            flex: 1;
+            text-align: center;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border: 1px solid #a78bfa;
+            border-radius: 20px;
+            font-size: 13px;
+            color: #aaa;
+            margin-bottom: 10px;
+        }
+
+        .info h1 {
+            font-size: 32px;
+            margin: 0 0 6px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .subtitle {
+            font-size: 15px;
+            color: #aaa;
+            margin-bottom: 20px;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid #333;
+            margin-bottom: 20px;
+        }
+
+        /* Stats row */
+        .stats {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .stat-box {
+            flex: 1;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .stat-box .label {
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 4px;
+        }
+
+        .stat-box .value {
+            font-size: 16px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        /* Tags */
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center; 
+        }
+
+        .tag {
+            padding: 5px 14px;
+            border: 1px solid #a78bfa;
+            border-radius: 20px;
+            font-size: 13px;
+            color: #aaa;
+           
+        }
+
+        /* Before & After section */
+        .image-section {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 40px;
+            margin: 30px 0;
+        }
+
+        .image-box {
+            text-align: center;
+        }
+
+        .image-box img {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 10px;
+            border: 2px solid #a78bfa;
+        }
+
+        .image-box p {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #a78bfa;
+            font-weight: bold;
+        }
+
+        .arrow {
+            font-size: 40px;
+            color: #a78bfa;
+            margin-bottom: 130px;
+        }
+
+        /* About section */
+        .about {
+            margin-top: 40px;
+        }
+
+        h2 {
+            color: #a78bfa;
+            border-left: 4px solid #a78bfa;
+            padding-left: 10px;
+            margin-top: 30px;
+        }
+
+        p {
+            line-height: 1.8;
+            color: #cccccc;
+            font-size: 15px;
+        }
+
+        /* Mobile */
+        @media (max-width: 767px) {
+            body{
+                width: 100%;
+            }
+            
+            .image-section {
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                gap: 40px;
+                margin: 20px 0;
+            }
+
+            .image-box {
+                text-align: center;
+            }
+
+            .image-box img {
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                object-position: top;
+                border-radius: 10px;
+                border: 2px solid #a78bfa;
+            }
+
+       
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Back button -->
+    <a href="index.html" class="back-btn">← Back to Home</a>
+
+    <!-- Header -->
+    <div class="header">
+        
+        <div class="info">
+            <span class="badge">Solo Leveling</span>
+            <h1>Sung Jin-Woo</h1>
+            <p class="subtitle">The Shadow Monarch · S-Rank Hunter</p>
+            <hr class="divider">
+            <div class="stats">
+                <div class="stat-box">
+                    <div class="label">Rank</div>
+                    <div class="value">S-Rank</div>
+                </div>
+                <div class="stat-box">
+                    <div class="label">Class</div>
+                    <div class="value">Necromancer</div>
+                </div>
+                <div class="stat-box">
+                    <div class="label">Title</div>
+                    <div class="value">Monarch</div>
+                </div>
+            </div>
+            <div class="tags">
+                <span class="tag">Shadow Army</span>
+                <span class="tag">System User</span>
+                <span class="tag">Arise</span>
+                <span class="tag">Immortal</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Before & After -->
+    <div class="image-section">
+        <div class="image-box">
+            <img src="./img/begin.webp" alt="Before">
+            <p>Before</p>
+        </div>
+        <div class="arrow">→</div>
+        <div class="image-box">
+            <img src="./img/now.jpg" alt="Now">
+            <p>Now</p>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="about">
+        <h2>About</h2>
+        <p>Sung Jin-Woo is the main character of Solo Leveling. He started out as the weakest E-Rank hunter, known as the "World's Weakest Hunter." After being trapped in a deadly double dungeon, he was chosen by a mysterious System that allowed him to level up endlessly — something no other hunter in the world could do.</p>
+        <p>Unlike other hunters who were born with fixed powers, Jin-Woo grew stronger every single day through hard work, dangerous quests, and sheer willpower. His journey from the bottom to becoming the most powerful being in existence is what makes his story so extraordinary.</p>
+
+        <h2>Powers & Abilities</h2>
+        <p>Jin-Woo's greatest ability is Arise — the power to turn defeated enemies into loyal shadow soldiers. Over time, he built an enormous shadow army including powerful monarchs and beasts. He also possesses superhuman speed, strength, and regeneration that far surpasses any other hunter.</p>
+
+        <h2>Personality</h2>
+        <p>Despite his overwhelming power, Jin-Woo remains calm, quiet, and protective of those he loves — especially his mother and sister. He is not driven by fame or glory, but by the desire to protect the people around him.</p>
+    </div>
+
+</body>
+</html>
